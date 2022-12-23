@@ -1,0 +1,45 @@
+// colors START
+
+$colors: (
+  bg: #0d121c,
+  primary: #8247e5,
+  secondary: #3772ff,
+  text: #ffffff,
+  blurText: #707379,
+  lightText: #ababab,
+  border: #181c27,
+  success: #00ffa3,
+  error: #db6767,
+  gradient: radial-gradient(200% 5898.69% at 0% 100%, #3772ff 0%, #fa00ff 60%),
+  gradient2: radial-gradient(200% 5898.69% at 0% 100%, #3772ff 0%, #fa00ff 20%),
+);
+
+// colors END
+
+// fonts START
+
+$fonts: (
+  b1: 64,
+  b2: 48,
+  b3: 32,
+  b4: 28,
+  md1: 24,
+  md2: 20,
+  md3: 18,
+  sm1: 16,
+  sm2: 14,
+  xs1: 12,
+);
+
+// fonts END
+
+// responsive START
+
+$breakpoints: (
+  "mobile": "(max-width: 767px)",
+  "tablet": "(max-width: 991px)",
+  "landscape": "(max-width: 1199px)",
+  "landscape1": "(max-width: 1399px)",
+);
+
+// responsive END
