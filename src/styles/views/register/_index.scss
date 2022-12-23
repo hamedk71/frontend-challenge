@@ -8,7 +8,7 @@
 
   &__title {
     margin-bottom: 80px;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   &__section {
@@ -32,7 +32,9 @@
     width: 100%;
   }
 
-  &__title {
-    font-size: 22px;
+  @include respond-to(mobile) {
+    &__title {
+      font-size: 22px;
+    }
   }
 }
