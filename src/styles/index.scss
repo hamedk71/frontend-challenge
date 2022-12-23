@@ -5,7 +5,25 @@
 @import "./globals";
 
 
+// components
+@import "components/button";
+@import "components/radioButton";
+@import "components/input";
+@import "components/statistics";
+@import "components/stepMap";
 
+
+// layout
+@import "layouts/header";
+
+
+// home
+@import "views/home/index";
+
+
+// register
+@import "views/register/index";
+@import "views/register/complete";
 
 
 

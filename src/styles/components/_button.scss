@@ -1,0 +1,54 @@
+.button {
+  outline: none;
+  border: none;
+  color: color(text);
+  padding: 10px 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  transition: all 0.4s linear;
+  border-radius: 8px;
+  cursor: pointer;
+  @extend %center;
+
+  &.primary {
+    background: color(gradient2);
+    background-size: 400% 400%;
+
+    &:not(:disabled):hover {
+      background-position: 10% 70%;
+    }
+
+    &:disabled {
+      background: color(blurText);
+      cursor: not-allowed;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.outline {
+    background: transparent;
+    color: color(lightText);
+    border: 1px solid color(lightText);
+
+    &:not(:disabled):hover {
+      color: color(text);
+      border: 1px solid color(text);
+    }
+
+    &:disabled {
+      color: color(blurText);
+      border: 1px solid color(blurText);
+    }
+  }
+
+  &.lg {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+}

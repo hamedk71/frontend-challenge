@@ -1,0 +1,44 @@
+.stepMap {
+  width: 100%;
+  max-width: 270px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__item {
+    @extend %center;
+    @include w-h(32px, 32px);
+    background: color(bg);
+    border: 1px solid color(blurText);
+    color: color(blurText);
+    font-size: 18px;
+    transition: 0.4s linear;
+    border-radius: 8px;
+
+    &.active {
+      color: color(primary);
+      border-color: color(primary);
+    }
+  }
+
+  &__line {
+    @include w-h(0%, 3px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.4s ease-in;
+    background: color(gradient);
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    @include w-h(100%, 3px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.4s ease-in;
+    background: rgba(color(blurText), 0.5);
+    z-index: -2;
+  }
+}

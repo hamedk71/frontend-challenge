@@ -1,0 +1,42 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  color: color(lightText);
+  font-size: 14px;
+  transition: color 0.2s linear;
+  text-transform: capitalize;
+
+  &__field {
+    background: transparent;
+    border-radius: 8px;
+    outline: none;
+    background: lighten(color(bg), 10);
+    border: 4px solid lighten(color(bg), 15);
+    color: color(text);
+    transition: all 0.2s linear;
+    padding: 10px;
+
+    &:focus {
+      border-color: color(secondary);
+    }
+
+    &:disabled {
+      color: color(blurText);
+      cursor: not-allowed;
+    }
+  }
+
+  &:focus-within {
+    color: color(text);
+  }
+
+  &.error {
+    color: color(error);
+
+    & .input__field:focus {
+      border-color: color(error);
+    }
+  }
+}

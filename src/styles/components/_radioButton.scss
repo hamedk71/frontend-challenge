@@ -1,0 +1,50 @@
+.radioButtons {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+
+  &__title {
+    color: color(lightText);
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-size: 14px;
+
+    &.error {
+      color: color(error);
+    }
+  }
+
+  &__item {
+    flex: 1;
+
+    &-label {
+      display: block;
+      text-transform: capitalize;
+      border: 1px solid;
+      padding: 4px 0;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      color: color(lightText);
+      width: 100%;
+      transition: color 0.2s linear;
+      border-radius: 8px;
+    }
+
+    &-input {
+      display: none;
+    }
+
+    & input[type="radio"]:checked + label {
+      color: color(primary);
+    }
+
+    & input[type="radio"]:disabled + label {
+      cursor: not-allowed;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+}

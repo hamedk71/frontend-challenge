@@ -1,3 +1,9 @@
+# how start project
+
+1- npm install or npm i
+2- npm start 
+
+
 # Sheypoor frontend-challenge
 
 The task is to implement a **2 step UI wizard** to create a user account. There is no UX or UI constraints, this is 
