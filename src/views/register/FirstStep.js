@@ -39,6 +39,10 @@ export default function FirstStep({ data, setData, setStep }) {
                     {...register("age", {
                         required: "is required.",
                         value: data?.age,
+                        maxLength: {
+                            value: 3,
+                            message: "is too much"
+                        },
                         pattern: {
                             value: NUMBER_REG,
                             message: "is number only."
