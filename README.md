@@ -1,7 +1,8 @@
 # how start project
 
-1- npm install or npm i
-2- npm start 
+1- npm install or npm i.
+
+2- npm start.
 
 
 # Sheypoor frontend-challenge
